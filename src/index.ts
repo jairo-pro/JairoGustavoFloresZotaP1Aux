@@ -133,17 +133,9 @@ while(cont >= 50 && cont <= 300){
 }*/
 
 //PREGUNTA3
-/*var list : String[] = 
-[
-    'underscore_case',
-    'first_name',
-    'Some_Variable',
-    'calculate_AGE',
-    'delayed_departure'
-];*/
 var list : String[] = 
 [
-    'CarNe_FreasE',
+    'underscore_case',
     'first_name',
     'Some_Variable',
     'calculate_AGE',
