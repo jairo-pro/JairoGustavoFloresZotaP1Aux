@@ -126,12 +126,36 @@ var jugadores1: String[] =
      var equipo1 
     */
 //PREGUNTA2
-/*var factura : number = 50 ;
+var factura : number = 275 ;
 var tip : number;
-var cont : number = 0;
-while(cont >= 50 && cont <= 300){
-}*/
+     factura >= 50 && factura <= 300 ? tip = factura*0.15: tip = factura*0.20
+     console.log("Propina : "+tip);
+     console.log("Factura : "+factura+", Propina: "+tip+ ", Total : "+(factura+tip));
+     function calctip(fact:number) {
+        tip = fact*0.15;
+        return fact>=50&&fact<=300 ? tip : fact*0.20;
+    }
+    console.log("Funcion propina : "+ calctip(factura));
+     /*  if(factura >= 50 && factura <= 300){
+         console.log(tip = factura*0.15);
+     }
+     else{
+         console.log(tip = factura*0.20);
+     }*/
+     var facturas : number[] = [22,259,176,440,37,105,10,1100,86,52];
+     const Arrayvacio : String[] = [];
+    
+     for(var i=0;i<facturas.length;i++){
+        Arrayvacio.push("propina : "+calctip(facturas[i])+"   ;   "+"Total : "+(calctip(facturas[i])+facturas[i]));
+     }
 
+     console.log("Array de Propinas y Totales :");
+     console.log(Arrayvacio);
+
+
+
+
+/*
 //PREGUNTA3
 var list : String[] = 
 [
@@ -147,7 +171,7 @@ var list : String[] =
     var posicion = list[i].indexOf('_');
     /*var newitem = list[i].substring(0,posicion);
     var subitem = list[i].substring(posicion+1);
-    var charit = list[i].charAt(posicion+1).toUpperCase();*/
+    var charit = list[i].charAt(posicion+1).toUpperCase();
     list[i] = list[i].substring(0,posicion) + list[i].charAt(posicion+1).toUpperCase() + list[i].substring(posicion+2);
     console.log(list[i]);
- }
+ }*/
